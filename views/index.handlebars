@@ -1,0 +1,70 @@
+<br>
+<h1 class="title">news scraper</h1>
+<h1 class="title" id="edition">
+    <span id="dark">unDARK </span>
+    edition</h1>
+<div class="container">
+
+    <div class="row">
+        <div class="col l12">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="http://via.placeholder.com/475x264">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <span class="card-title">
+                            <a href="#">
+                                <h4>Article Title</h4>
+                            </a>
+                        </span>
+                        <p>author</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn teal darken-4">comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col l12">
+            {{#each Articles}}
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="{{this.image}}">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <span class="card-title">
+                            <a href="{{this.link}}">
+                                <h4>{{this.title}}</h4>
+                            </a>
+                        </span>
+                        <p>{{this.author}}</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn teal darken-4">comment</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo center">news scraper unDark</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="/saved">SAVED ARTICLES</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light btn teal darken-4" id="new-button">Get New Articles</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

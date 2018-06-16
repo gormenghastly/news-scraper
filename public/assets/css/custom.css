@@ -1,0 +1,49 @@
+body {
+  background: url('../images/hands-paper2.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  font-family: Dosis, sans-serif;
+}
+.container {
+  font-family: Dosis, sans-serif;
+}
+
+.title {
+  color: black;
+  font-size: 5em;
+  font-weight: bold;
+  margin-left: 1em;
+}
+#dark {
+  font-family: Gloria Hallelujah, cursive;
+  font-size: 1em;
+  color: teal;
+  font-weight: bold;
+  text-shadow: 8px 4px black;
+}
+#edition {
+}
+.horizontal {
+  background: #eeeeeecc;
+}
+h4 {
+  color: #004d40;
+  font-weight: bold;
+}
+p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.navbar-fixed {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.nav-wrapper {
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+}
